@@ -1,0 +1,44 @@
+<div class="container">
+  <textarea
+    #textArea
+    [(ngModel)]="inputText"
+    (ngModelChange)="onTextChange()"
+    rows="10"
+    placeholder="Enter your text here...">
+  </textarea>
+
+  <div class="stats">
+    <span>Characters: {{ chars }}</span>
+    <span>Words: {{ words }}</span>
+  </div>
+
+  <div class="actions">
+    <button (click)="getSynonyms()" [disabled]="loading || synonyms.length > 0">
+      {{ loading ? 'Loading...' : 'Get Synonyms' }}
+    </button>
+    <button (click)="copyTextToClipboard()">
+      Copy text
+    </button>
+  </div>
+
+  @if(error) {
+    <div class="error-message">
+      {{ error }}
+    </div>
+  }
+  
+  @if(synonyms.length > 0 && !loading) {
+    <div class="synonyms-container">
+      <h2>Synonyms for: {{ selectedText }}</h2>
+      <ul class="synonyms-list">
+        @for (synonym of synonyms; track $index) {
+          <li>
+            <button class="synonym-button" (click)="replaceSelectedText(synonym)">
+              {{ synonym }}
+            </button>
+          </li>
+        }
+      </ul>
+    </div>
+  }
+</div>

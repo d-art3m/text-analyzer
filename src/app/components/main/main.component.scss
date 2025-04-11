@@ -1,0 +1,85 @@
+.container {
+  margin: 2rem 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  font-size: var(--fs-md);
+  resize: vertical;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  button {
+    padding: 1rem;
+    font-size: var(--fs-md);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+    &:hover {
+      background-color: var(--accent-color);
+    }
+  
+    &:disabled {
+      background-color: var(--disabled-color);
+      cursor: not-allowed;
+    }
+  }
+}
+
+.synonyms-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+
+    h2 {
+      margin-bottom: 1rem
+    }
+}
+
+.synonyms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.synonym-button {
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-sm);
+  cursor: pointer;
+
+  border: 1px solid var(--primary-color);
+  border-radius: 0.25rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}

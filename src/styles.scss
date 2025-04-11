@@ -1,0 +1,52 @@
+:root {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-gradient: linear-gradient(135deg, #001f3f, #014e38, #01654e);
+
+  --text-color: #fff;
+  --dark-text-color: #000;
+  
+  --primary-color: #007bff88;
+  --secondary-color: #16355488;
+  --accent-color: #f1750f;
+  --disabled-color: #aaa;
+
+  --fs-sm: 0.75rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 2rem;
+  
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--text-color);
+  background: var(--bg-gradient);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-medium);
+}
+
+.error-message {
+  color: var(--accent-color);
+}

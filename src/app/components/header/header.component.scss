@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  padding: 1rem 1.5rem;
+  background-color: var(--primary-color);
+
+  .logo {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-content {
+    padding: 0.25rem;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-light);
+  }
+}
