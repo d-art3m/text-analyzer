@@ -51,7 +51,9 @@ textarea {
     border-radius: 0.5rem;
     background-color: var(--primary-color);
 
-    h2 {
+    .container-header {
+      display: flex;
+      gap: 1rem;
       margin-bottom: 1rem
     }
 }

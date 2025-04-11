@@ -2,6 +2,8 @@
 
 This is a frontend application that allows users to analyze input text and interact with selected words or phrases to find and replace them with synonyms using Datamuse API.
 
+### Live Demo: https://text-analyzer-lemon.vercel.app/
+
 ## Tech Stack
 
 - Angular

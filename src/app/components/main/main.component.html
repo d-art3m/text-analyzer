@@ -29,7 +29,10 @@
   
   @if(synonyms.length > 0 && !loading) {
     <div class="synonyms-container">
-      <h2>Synonyms for: {{ selectedText }}</h2>
+      <div class="container-header">
+        <h2>Synonyms for: {{ selectedText }}</h2>
+        <button class="synonym-button" (click)="reset()">&times;</button>
+      </div>
       <ul class="synonyms-list">
         @for (synonym of synonyms; track $index) {
           <li>
